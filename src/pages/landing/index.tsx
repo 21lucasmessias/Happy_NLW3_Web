@@ -20,7 +20,7 @@ const Landing:React.FC = () => {
           <p className='state'>State</p>
         </div>
 
-        <Link to='locations'>
+        <Link to='orphanages'>
           <FaArrowRight size={32} color='#8D734B'/>
         </Link>
       </div>

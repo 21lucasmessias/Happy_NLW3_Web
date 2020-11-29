@@ -1,0 +1,103 @@
+#new-orphanage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100vw;
+}
+
+#new-orphanage .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+#new-orphanage .wrapper p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #8FA7B3;
+  padding: 40px 0 40px 0;
+}
+
+#new-orphanage main{
+  width: 703px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border: 1px solid #D3E2E5;
+  border-radius: 20px;
+
+  background-color: #ffffff;
+}
+
+#new-orphanage .new-orphanage-form {
+  padding: 64px 80px;
+  width: 100%;
+}
+
+#new-orphanage .new-orphanage-form fieldset {
+  border-width: 0;
+}
+
+#new-orphanage .new-orphanage-form fieldset legend {
+  border-bottom: 1px solid #D3E2E5 ;
+  width: 100%;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 34px;
+
+  color: #4D6F80;
+  
+  padding-bottom: 24px;
+}
+
+#new-orphanage .new-orphanage-form fieldset .input-block {
+  padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+}
+
+#new-orphanage .new-orphanage-form fieldset .input-block label {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  
+  padding-bottom: 8px;
+  
+  color: #8FA7B3;
+}
+
+#new-orphanage .new-orphanage-form fieldset .input-block span {
+  padding-left: 32px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #8FA7B3;
+}
+
+#new-orphanage .new-orphanage-form fieldset .input-block input {
+  background: #F5F8FA;
+
+  border: 1px solid #D3E2E5;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+
+  height: 64px;
+}

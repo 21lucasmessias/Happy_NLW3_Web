@@ -1,0 +1,71 @@
+#locations {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#locations .left-header {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: 20%;
+  background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+
+  padding: 60px;
+}
+
+#locations .left-header .description {
+  height: 90%;
+  padding-top: 100px;
+}
+
+#locations .left-header img {
+  align-self: flex-start;
+}
+
+#locations .left-header p {
+  width: 100%;
+  max-width: 233px;
+
+  color: #ffffff;
+  font-family: Nunito;
+  font-style: normal;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#locations .left-header .choose-orphanage {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 42px;
+}
+
+#locations .left-header .info {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+#locations .left-header .location {
+  width: 100%;
+  max-width: 233px;
+}
+
+#locations .left-header .location p {
+  font-size: 24px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+#locations .left-header .location .city{
+  font-weight: 800;
+}
+
+#locations .left-header .location .state{
+  font-weight: 600;
+}

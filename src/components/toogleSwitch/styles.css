@@ -1,0 +1,42 @@
+.toogle-switch {
+  width: 64px;
+  height: 24px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  background-color: #F5F8FA;
+  border: 1px solid #D3E2E5;
+
+  transition: 
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.toogle-switch.active {
+  background-color: #39CC83;
+  border-color: #39CC83;
+}
+
+.toogle-switch::before {
+  content: '';
+  position: absolute;
+
+  top: 5px;
+  left: 6px;
+
+  width: 26px;
+  height: 12px;
+  border-radius: 20px;
+  
+  background-color: #8FA7B3;
+
+  transition:
+    left 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.toogle-switch.active::before {
+  left: 30px;
+  background-color: #fff;
+}
+

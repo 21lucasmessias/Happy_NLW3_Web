@@ -1,4 +1,4 @@
-#new-orphanage {
+#orphanage-create {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   width: 100vw;
 }
 
-#new-orphanage .wrapper {
+#orphanage-create .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@
   height: 100%;
 }
 
-#new-orphanage .wrapper p {
+#orphanage-create .wrapper p {
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -27,7 +27,7 @@
   padding: 40px 0 40px 0;
 }
 
-#new-orphanage main{
+#orphanage-create .wrapper main{
   width: 703px;
   
   display: flex;
@@ -40,16 +40,16 @@
   background-color: #ffffff;
 }
 
-#new-orphanage .new-orphanage-form {
+#orphanage-create .new-orphanage-form {
   padding: 64px 80px;
   width: 100%;
 }
 
-#new-orphanage .new-orphanage-form fieldset {
+#orphanage-create .new-orphanage-form fieldset {
   border-width: 0;
 }
 
-#new-orphanage .new-orphanage-form fieldset legend {
+#orphanage-create .new-orphanage-form fieldset legend {
   border-bottom: 1px solid #D3E2E5 ;
   padding-bottom: 24px;
   width: 100%;
@@ -62,7 +62,7 @@
   color: #4D6F80;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-map {
+#orphanage-create .new-orphanage-form fieldset .input-map {
   margin-top: 40px;
 
   height: 291px;
@@ -72,7 +72,7 @@
   border: 1px solid #DDE3F0;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-block {
+#orphanage-create .new-orphanage-form fieldset .input-block {
   padding-top: 54px;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-block:last-of-type {
+#orphanage-create .new-orphanage-form fieldset:last-of-type .input-block:last-of-type {
   padding-bottom: 41px;
   flex-direction: row;
   justify-content: space-between;
@@ -88,7 +88,7 @@
   align-items: center;
  }
 
-#new-orphanage .new-orphanage-form fieldset .input-block label {
+#orphanage-create .new-orphanage-form fieldset .input-block label {
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
@@ -98,7 +98,7 @@
   color: #8FA7B3;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-block span {
+#orphanage-create .new-orphanage-form fieldset .input-block span {
   padding-left: 32px;
 
   font-weight: normal;
@@ -108,7 +108,7 @@
   color: #8FA7B3;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-block input {
+#orphanage-create .new-orphanage-form fieldset .input-block input {
   background: #F5F8FA;
 
   border: 1px solid #D3E2E5;
@@ -119,14 +119,14 @@
   height: 64px;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-block .uploaded-image {
+#orphanage-create .new-orphanage-form fieldset .input-block .uploaded-image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 8px;
   padding-bottom: 80px;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-block .uploaded-image img {
+#orphanage-create .new-orphanage-form fieldset .input-block .uploaded-image img {
   height: 96px;
   width: 100%;
   border: 1px solid #D3E2E5;
@@ -134,7 +134,7 @@
   padding: 3px;
 }
 
-#new-orphanage .new-orphanage-form fieldset .input-block button {
+#orphanage-create .new-orphanage-form fieldset .input-block .uploaded-image .new-image {
   border: 1px dashed #96D2F0;
   border-radius: 20px;
   
@@ -150,7 +150,7 @@
   background: #F5F8FA;
 }
 
-#new-orphanage .new-orphanage-form fieldset .submit {
+#orphanage-create .new-orphanage-form fieldset .submit {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,6 +174,6 @@
   transition: background 0.3s ease;
 }
 
-#new-orphanage .new-orphanage-form fieldset .submit:hover {
+#orphanage-create .new-orphanage-form fieldset .submit:hover {
   background: #3EE08F;
 }

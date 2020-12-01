@@ -1,0 +1,187 @@
+#orphanage-details {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  width: 100vw;
+}
+
+#orphanage-details .wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height: 100%;
+}
+
+#orphanage-details .wrapper p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #8FA7B3;
+  padding: 40px 0 40px 0;
+}
+
+#orphanage-details .wrapper .main-wrapper{  
+  border: 1px solid #D3E2E5;
+  border-radius: 20px;
+  
+  width: 703px;
+
+  background-color: #ffffff;
+}
+
+#orphanage-details .wrapper .main-wrapper .image-focus{
+  height: 336px;
+  border-radius: 20px 20px 0 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+
+  margin-bottom: 24px;
+  transition: background-image 1s linear;
+}
+
+#orphanage-details .wrapper .main-wrapper .carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  padding: 0 32px 0 32px;
+}
+
+#orphanage-details .wrapper .main-wrapper .image-carousel {
+  height: 94px;
+  width: 94px;
+  cursor: pointer;
+
+  border-radius: 20px;
+  border: 1px solid #B3DAE2;
+
+  object-fit: contain;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper {
+  padding: 64px 80px 80px 80px;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .name {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 54px;
+  color: #4D6F80;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .about {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #5C8599;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .orphanage-instructions {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  color: #4D6F80;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .instructions {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #5C8599;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .input-map {
+  height: 291px;
+  width: 100%;
+
+  border-radius: 20px;
+  border: 1px solid #DDE3F0;
+  margin-bottom: 64px;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .separator {
+  border-bottom: 1px solid #DDE3F0;
+
+  margin-bottom: 64px;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .schedule {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .schedule div {
+  width: 264px;
+  height: 176px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 32px 0px 32px 24px;
+  border-radius: 20px;
+
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .schedule .visit {
+  border: 1px solid #B3DAE2;
+    
+  color: #5C8599;
+
+  background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.67%);
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .schedule .weekend-yes {
+  border: 1px solid #A1E9C5;
+  
+  color: #37C77F;
+  
+  background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .schedule .weekend-no {
+  border: 1px solid #FFBCD4;
+
+  color: #FF669D;
+
+  background: linear-gradient(154.16deg, #FCF0F4 7.85%, #FFFFFF 91.03%);
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 500px;
+  height: 64px;
+  border-radius: 20px;
+
+  color: #fff;  
+  text-decoration: none;
+  column-gap: 16px;
+
+  background: #3CDC8C;
+}

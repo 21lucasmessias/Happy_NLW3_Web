@@ -7,7 +7,6 @@ interface iToogleSwitch {
 }
 
 const ToogleSwitch: React.FC<iToogleSwitch> = ({setState}) => {
-
   const handlerFunction = (event: React.MouseEvent) => {
     event.currentTarget.classList.toggle('active');
     setState(event.currentTarget.classList[1] === 'active');

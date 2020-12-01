@@ -108,17 +108,46 @@
 }
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .input-map {
+  position: relative;
   height: 291px;
   width: 100%;
 
   border-radius: 20px;
-  border: 1px solid #DDE3F0;
   margin-bottom: 64px;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .input-map .google-maps {
+  position: absolute;
+  bottom: -64px;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 86px;
+
+  border: 1px solid #B3DAE2;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  text-decoration: none;
+
+  background: #E6F7FB;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .input-map .google-maps p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #0089A5;
 }
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .separator {
   border-bottom: 1px solid #DDE3F0;
-
+  padding-top: 64px;
   margin-bottom: 64px;
 }
 

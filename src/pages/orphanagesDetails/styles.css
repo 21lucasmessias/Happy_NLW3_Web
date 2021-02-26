@@ -16,7 +16,7 @@
   height: 100%;
 }
 
-#orphanage-details .wrapper p {
+#orphanage-details .wrapper .title {
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -36,7 +36,7 @@
   background-color: #ffffff;
 }
 
-#orphanage-details .wrapper .main-wrapper .image-focus{
+#orphanage-details .wrapper .main-wrapper .image-focus {
   height: 336px;
   border-radius: 20px 20px 0 0;
 
@@ -87,24 +87,8 @@
   font-size: 18px;
   line-height: 28px;
   color: #5C8599;
-}
 
-#orphanage-details .wrapper .main-wrapper .details-wrapper .orphanage-instructions {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 46px;
-  color: #4D6F80;
-}
-
-#orphanage-details .wrapper .main-wrapper .details-wrapper .instructions {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  color: #5C8599;
+  padding-top: 32px;
 }
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .input-map {
@@ -114,6 +98,7 @@
 
   border-radius: 20px;
   margin-bottom: 64px;
+  padding-top: 64px;
 }
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .input-map .google-maps {
@@ -133,6 +118,8 @@
   text-decoration: none;
 
   background: #E6F7FB;
+  
+  padding-top: 40px;
 }
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .input-map .google-maps p {
@@ -151,21 +138,42 @@
   margin-bottom: 64px;
 }
 
+#orphanage-details .wrapper .main-wrapper .details-wrapper .orphanage-instructions {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 46px;
+  color: #4D6F80;
+}
+
+#orphanage-details .wrapper .main-wrapper .details-wrapper .instructions {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #5C8599;
+
+  padding-top: 24px;
+}
+
 #orphanage-details .wrapper .main-wrapper .details-wrapper .schedule {
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
+  
+  padding-top: 24px;
 }
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .schedule div {
   width: 264px;
   height: 176px;
-
+  
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
-  padding: 32px 0px 32px 24px;
   border-radius: 20px;
 
   font-family: Nunito;
@@ -173,6 +181,8 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+
+  padding-left: 31px;
 }
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .schedule .visit {
@@ -185,7 +195,7 @@
 
 #orphanage-details .wrapper .main-wrapper .details-wrapper .schedule .weekend-yes {
   border: 1px solid #A1E9C5;
-  
+
   color: #37C77F;
   
   background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);

@@ -1,14 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Header from '../../components/header';
 
 import {FiPlus} from 'react-icons/fi'
 import './styles.css';
 
 import ToogleSwitch from '../../components/toogleSwitch';
-import { MapContainer, Marker, TileLayer, useMapEvents } from 'react-leaflet';
+import { MapContainer, Marker, MarkerProps, TileLayer } from 'react-leaflet';
 import leaflet from 'leaflet';
 
 import mapMarker from '../../assets/images/map-marker.svg';
+
+interface iMarker {
+  _latlng: {
+    lat: number,
+    lng: number
+  }
+}
 
 const mapIcon = leaflet.icon({
   iconUrl: mapMarker,
@@ -26,20 +33,12 @@ const OrphanageCreate: React.FC = () => {
   const [instructions, setInstructions] = useState('');
   const [schedule, setSchedule] = useState('');
   const [weekend, setWeekend] = useState(false);
-  const [latitude, setLatitude] = useState(0);
-  const [longitude, setLongitude] = useState(0);
 
   const [latitudeCenter, setLatitudeCenter] = useState(0);
   const [longitudeCenter, setLongitudeCenter] = useState(0);
 
-  const [position, setPosition] = useState(null);
-
-  const map = useMapEvents({
-    click() {
-      map.locate()
-    },
-  })
-  
+  const markerRef = useRef(null);
+ 
   useEffect(() => {
       navigator.geolocation.getCurrentPosition( location => {
         setLatitudeCenter(location.coords.latitude);
@@ -57,6 +56,7 @@ const OrphanageCreate: React.FC = () => {
     //organizar imagens
     //conectar api
     //enviar dados
+    //console.log((markerRef.current as iMarker | null)?._latlng.lat);
     e.preventDefault();
   }
 
@@ -93,17 +93,17 @@ const OrphanageCreate: React.FC = () => {
                   center={[latitudeCenter, longitudeCenter]}
                   zoom={13}
                   style={{width:'100%', height: '100%', borderRadius: '20px'}}
+                  
                 >
-                  <TileLayer
-                    url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
-                    
-                  />
+                  <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
 
                   {
-                    longitude && (
+                    longitudeCenter && (
                       <Marker 
-                        position={{lat: latitude, lng: longitude}}
+                        position={{lat: latitudeCenter, lng: longitudeCenter}}
+                        draggable
                         icon={mapIcon}
+                        ref={markerRef}
                       />
                     )
                   }
@@ -141,7 +141,7 @@ const OrphanageCreate: React.FC = () => {
                 <div className="uploaded-image">
                   {previewImages.map((image, index) => {
                     return(
-                      <img src={image} key={index} alt={`${image}-${index}`}/>
+                      <img src={image} key={index} alt={`${image}-${index}`} style={{objectFit: 'cover'}}/>
                     )
                   })}
                   

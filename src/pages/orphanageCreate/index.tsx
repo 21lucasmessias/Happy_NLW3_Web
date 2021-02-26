@@ -5,10 +5,11 @@ import {FiPlus} from 'react-icons/fi'
 import './styles.css';
 
 import ToogleSwitch from '../../components/toogleSwitch';
-import { MapContainer, Marker, MarkerProps, TileLayer } from 'react-leaflet';
+import { MapContainer, Marker, TileLayer } from 'react-leaflet';
 import leaflet from 'leaflet';
 
 import mapMarker from '../../assets/images/map-marker.svg';
+import api from '../../api/api';
 
 interface iMarker {
   _latlng: {
@@ -51,12 +52,24 @@ const OrphanageCreate: React.FC = () => {
     return(<div>Loading...</div>)
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {   
-    //organizar os inputs
-    //organizar imagens
-    //conectar api
-    //enviar dados
-    //console.log((markerRef.current as iMarker | null)?._latlng.lat);
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    let data = new FormData();
+
+    data.append('name', name);
+    data.append('latitude', (markerRef.current as iMarker | null)?._latlng.lat.toString() as string);
+    data.append('longitude', (markerRef.current as iMarker | null)?._latlng.lng.toString() as string);
+    data.append('number', number);
+    data.append('about', about);
+    data.append('instructions', instructions);
+    data.append('schedule', schedule);
+    data.append('weekend', weekend ? 'true' : 'false');
+
+    images.forEach(image => {
+      data.append('images', image);
+    })
+    
+    api.post('/orphanage/create', data);
+
     e.preventDefault();
   }
 
